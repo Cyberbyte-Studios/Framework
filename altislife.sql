@@ -194,10 +194,10 @@ CREATE TABLE IF NOT EXISTS `containers` (
 --
 
 CREATE TABLE IF NOT EXISTS `wanted` (
-  `wantedID` varchar(64) NOT NULL,
-  `wantedName` varchar(32) NOT NULL,
-  `wantedCrimes` text NOT NULL,
-  `wantedBounty` int(100) NOT NULL,
+  `id` varchar(64) NOT NULL,
+  `name` varchar(32) NOT NULL,
+  `crimes` text NOT NULL,
+  `bounty` int(100) NOT NULL,
   `active` tinyint(1) NOT NULL DEFAULT '0',
   `insert_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`wantedID`)

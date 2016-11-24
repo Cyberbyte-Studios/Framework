@@ -15,7 +15,7 @@ disableSerialization;
 _ret = [_this,0,objNull,[objNull]] call BIS_fnc_param;
 _criminal = [_this,1,[],[]] call BIS_fnc_param;
 
-_query = format ["SELECT wantedCrimes, wantedBounty FROM wanted WHERE active='1' AND wantedID='%1'",_criminal select 0];
+_query = format ["SELECT crimes, bounty FROM wanted WHERE active='1' AND id='%1'",_criminal select 0];
 _queryResult = [_query,2] call HC_fnc_asyncCall;
 
 _crimesArr = [];
